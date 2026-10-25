@@ -1,0 +1,140 @@
+{
+  "cdp": {
+    "port": 9222
+  },
+  "client": {
+    "exe": ""
+  },
+  "trigger": {
+    "mode": "mention",
+    "prefix": "X",
+    "keywords": []
+  },
+  "groups": {
+    "enabled": true,
+    "mode": "all",
+    "ids": [],
+    "proactive": {
+      "enabled": true,
+      "ids": [],
+      "gapMinutes": 0,
+      "dailyMax": 1,
+      "globalMinutes": 30,
+      "idleMinutes": 30.0,
+      "hourStart": 9,
+      "hourEnd": 23,
+      "prompt": ""
+    }
+  },
+  "dms": {
+    "enabled": true,
+    "ids": [],
+    "alwaysReply": true,
+    "ping": {
+      "enabled": true,
+      "idleMinutes": 0.0833,
+      "minGapMinutes": 0,
+      "globalMinutes": 1,
+      "dailyMax": 20,
+      "hourStart": 0,
+      "hourEnd": 23,
+      "againMinutes": 45,
+      "escalate": true,
+      "giveUpAfter": 2,
+      "giveUpHours": 20,
+      "onlyKnown": true,
+      "prompt": "",
+      "uids": []
+    }
+  },
+  "reply": {
+    "maxChars": 280,
+    "groupCooldownSeconds": 3,
+    "globalCooldownSeconds": 1,
+    "directReply": true,
+    "directReplyRate": 20,
+    "directMinGapSeconds": 600,
+    "adminAlwaysReply": false,
+    "adminBypassCooldown": false,
+    "dmMaxChars": 800,
+    "styleGate": true
+  },
+  "ai": {
+    "baseUrl": "https://api.deepseek.com/v1/chat/completions",
+    "model": "deepseek-chat",
+    "token": "",
+    "visionModel": "",
+    "visionBaseUrl": "",
+    "visionToken": "",
+    "webSearch": true,
+    "searchKey": "",
+    "searchUrl": "https://api.bocha.cn/v1/web-search",
+    "prompt": "",
+    "maxTokens": 900,
+    "temperature": 1.0,
+    "historyRounds": 6,
+    "timeoutSeconds": 60,
+    "learnEvery": 6,
+    "learnMaxNotes": 20,
+    "mood": true,
+    "moodBase": 70,
+    "moodCalmHours": 3.0,
+    "moodEmoMinutes": 90,
+    "think": true,
+    "thinkMode": "always",
+    "thinkModel": "deepseek-reasoner",
+    "thinkCap": 5,
+    "price": {
+      "in": 2.0,
+      "out": 3.0,
+      "hit": 0.2
+    },
+    "moodEvery": 3,
+    "moodByTurn": true,
+    "moodByTime": true,
+    "moodGapMinutes": 2,
+    "agentLoop": true,
+    "loopSteps": 3,
+    "peerRounds": 8
+  },
+  "emoji": {
+    "enabled": true,
+    "autoCollect": true,
+    "useRate": 40,
+    "maxStickers": 30
+  },
+  "poll": {
+    "intervalSeconds": 2.5
+  },
+  "bubble": {
+    "enabled": true,
+    "idleMinutes": 30,
+    "gapMinutes": 60,
+    "chance": 50,
+    "prompt": ""
+  },
+  "kb": {
+    "maxChars": 8000
+  },
+  "control": {
+    "enabled": true,
+    "prefix": "/",
+    "uids": [],
+    "nl": true
+  },
+  "ui": {
+    "maxMessages": 80
+  },
+  "catchUp": {
+    "enabled": true,
+    "afterMinutes": 5,
+    "maxHours": 12
+  },
+  "farewell": {
+    "enabled": true,
+    "seconds": 90,
+    "diary": true,
+    "outlook": true,
+    "maxGroups": 3
+  }
+}
